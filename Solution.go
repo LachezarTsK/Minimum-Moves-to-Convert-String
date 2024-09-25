@@ -10,7 +10,7 @@ func minimumMoves(input string) int {
 
     minMovesToConvertAllChars := 0
 
-    for i := range input {
+    for i := 0; i < len(input); i++ {
         if input[i] == CHAR_TO_CONVERT_TO_TARGET {
             i += NUMBER_OF_CONSECUTIVE_CHARS_TO_BE_REMOVED_AT_ONCE - 1
             minMovesToConvertAllChars++
